@@ -1,0 +1,185 @@
+.ordorCard {
+    width: 95%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 0;
+    padding: 0px 20px;
+    /* background: rgba(255, 255, 255, 0.233); */
+   
+
+}
+
+.ordorCard .body {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    /* background: rgb(255, 255, 255); */
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+}
+
+.ordorCard .body .orderimage {
+    width: 20%;
+}
+
+
+
+.ordorCard .body .details {
+    width: 60%;
+    font-size: 1.5rem;
+    color: #3b3b3b;
+   
+}
+
+/* .value {
+    color:olive;
+} */
+
+ .detail {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: white;
+    /* background-color: rgb(83,87,127) !important; */
+    border-left: 7px  solid rgb(95,158,160);
+    border-right: 7px  solid rgb(95,158,160);
+
+    margin: 5px !important;
+    padding: 5% 2%;
+    border-radius: 0 35px 35px 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+transition: all 1s ease;
+}
+
+.detail:hover {
+   
+    border-left: 10px  solid  rgb(244,182,63);
+    border-right: 10px  solid  rgb(244,182,63);
+    cursor: pointer;
+    animation:detail 2s linear forwards;
+    background-color: rgb(29,30,44);
+    color:rgb(244,182,63);
+}
+
+@keyframes detail{0%{transform:scaleX(.9);transform-origin:0 0}100%{transform:scaleX(1);transform-origin:0 0}}
+
+.detail .name{
+    color: cadetblue;
+    font-weight: bold;
+}
+
+
+
+
+
+/* .detail-1{
+    background: radial-gradient(#fbc1cc, #fa99b2);
+} */
+
+/* .ordorCard .body .details .detail .value {
+    font-size: 2rem;
+    font-weight: bold;
+} */
+
+.ordorCard .products {
+    border: 2px solid #fff;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.ordorCard button {
+    text-decoration: none;
+    border: none;
+    background-color: #f2f2f2;
+    border: 2px solid #800000;
+    color: #800000;
+    width: 50%;
+    font-size: 30px;
+    margin: 20px;
+    font-weight: bold;
+    padding: 0.3em 0.7em;
+}
+
+.ordorCard button:hover {
+    color: #f2f2f2;
+    background-color: #800000;
+}
+@media only screen and (max-width: 1200px) {
+    .ordorCard .products {
+        border: 2px solid #fff;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .ordorCard {
+        width: 90vw;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .ordorCard .body {
+        width: 100%;
+
+        flex-direction: column;
+    }
+
+    .ordorCard .body .orderimage {
+        width: 30%;
+    }
+
+    .ordorCard .body .orderimage img {
+        border-radius: 50%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .ordorCard .body .details {
+        width: 60%;
+        font-size: 1rem;
+        color: #f2f2f2;
+    }
+
+    .ordorCard .body .details .detail {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+    }
+
+    .ordorCard .body .details .detail .value {
+        font-size: 1rem;
+        font-weight: bold;
+    
+    }
+
+    .ordorCard .products {
+
+        display: grid;
+        width: 60vw;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        padding: 10px;
+    }
+
+}
+
+.ordorCard button {
+    font-size: 12px;
+    margin: 10px;
+width: 100%;
+}

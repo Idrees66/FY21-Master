@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0 ;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f4f2;
+/* background-color: rgb(242,242,242) !important; */
+background-color: #ffffff;
+background-image: url("https://www.transparenttextures.com/patterns/fabric-of-squares.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    font-family: sans-serif;
+    /* background: linear-gradient(to right, #800000, #DC143C); */
+    /* background-color: #79B4B7 !important; */
+    /* background: linear-gradient(to right, #79B4B7 , #c7f0f3); */
+    /* background: linear-gradient(90cdeg, rgba(2, 0, 36, 1) 0%, rgba(96, 37, 59, 1) 0%, rgba(30, 39, 55, 1) 59%) !important ;
+
+
+    background: radial-gradient(#fbc1cc, #fa99b2); */
+
+}
+
+
+
+
+/* .svg2 {
+  width: 11px;
+  height: 14px;
+  background: url('data:image/gif;base64,R0lGOD lhCwAOAMQfAP////7+/vj4+Hh4eHd3d/v7+/Dw8HV1dfLy8ubm5vX19e3t7fr 6+nl5edra2nZ2dnx8fMHBwYODg/b29np6eujo6JGRkeHh4eTk5LCwsN3d3dfX 13Jycp2dnevr6////yH5BAEAAB8ALAAAAAALAA4AAAVq4NFw1DNAX/o9imAsB tKpxKRd1+YEWUoIiUoiEWEAApIDMLGoRCyWiKThenkwDgeGMiggDLEXQkDoTh CKNLpQDgjeAsY7MHgECgx8YR8oHwNHfwADBACGh4EDA4iGAYAEBAcQIg0Dk gcEIQA7');
+} */
+
+/* .rotate{
+  animation: rotate 1.5s linear infinite; 
+} */
+
+
+/* width */
+::-webkit-scrollbar {
+width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 5px rgb(255, 255, 255); 
+border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: rgb(255, 255, 255); 
+border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #000; 
+}
+.App {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 1360px;
+  height: 100vh;
+
+}
+.App .logout-btn{
+  width: 100%;
+  height: 10%;
+  text-align: center;
+}
+@media only screen and (max-width: 1200px) {
+  .App{
+    width: 90vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .App{
+    width: 100vw;
+  }
+}

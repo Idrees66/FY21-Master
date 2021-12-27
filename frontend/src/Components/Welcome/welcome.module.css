@@ -1,0 +1,128 @@
+/* .back{
+    width: 100vw !important;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(96, 37, 59, 1) 0%, rgba(30, 39, 55, 1) 59%);
+
+} */
+
+.outerContainer{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    /* background-color: #c8db17; */
+    /* width: 65%;
+    background-color: #2f1d58; */
+    /* height: 80vh; */
+    /* overflow: auto; */
+    flex-direction: column;
+    position: relative;
+
+    width: 100vw !important;
+    margin: 0 !important;
+    padding: 0% 10% !important;
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+    background-position: center;
+    background-repeat: repeat !important;
+    background-color: #1f2029;
+    background-size: 4%;
+    /* background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(96, 37, 59, 1) 0%, rgba(30, 39, 55, 1) 59%); */
+}
+
+.outerContainer h1{
+    width: 380px;
+    /* height: 100px;
+    margin: 5px; */
+    font-weight: bold;
+    color: white;
+    font-size: 60px;
+    font-family: 'Rubik', sans-serif;
+    line-height: 90px;
+    z-index: 2;
+}
+
+.svg2{
+    position: absolute;
+    width:30%;
+    height: auto;
+    /* bottom: 10px !important; */
+    top: 30vh;
+    right: 30px;
+    animation:svg2 100s linear infinite;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+  }
+
+.svg5{
+    position: absolute;
+    width:30%;
+    height: auto;
+    /* bottom: 60px; */
+    bottom: 10px;
+}  
+
+  /* .svg2:hover{
+      transform: scale(1.5) !important;
+      transition-duration: 1s;
+      cursor: pointer;
+      background-color: antiquewhite;
+  }
+   */
+  /* h3{
+    animation: rotate 5.0s linear infinite !important ; 
+    background-color: cadetblue;
+    width: fit-content;
+    
+  }
+
+  .h3{
+    background-color: brown;
+  } */
+
+  /* h3{animation:.svg2 30s linear infinite} */
+
+  @keyframes svg2{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+
+
+  /* styles.css */
+.FlexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  width: 45%;
+  /* background-color: #2f1d58; */
+  /* height: 80vh; */
+  /* overflow: auto; */
+  flex-direction: row;
+}
+
+.FlexContainer div {
+  width: 160px;
+  height: 50px;
+  margin: 5px;
+  border: 2px solid white;
+  border-radius: 10px;
+  color:white;
+  font-size: medium;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition:all 1s ease;
+  
+  /* background-color: lightblue; */
+}
+
+.FlexContainer div:hover {
+  background: white;
+  color:#222;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/* .FlexContainer div {
+  color:beige;
+  font-size: large;
+} */

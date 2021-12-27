@@ -1,0 +1,153 @@
+.chatpage {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.chatpage .body {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    border-radius: 2em;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #fff;
+    padding: 20px;
+
+
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+
+.searchTerm {
+    width: 100%;
+    border: 3px solid rgb(29,30,44);
+    border-right: none;
+    padding: 15px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+  }
+  
+  .searchTerm:focus{
+    color: #00B4CC;
+    font-weight: bold;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid rgb(29,30,44);
+    background: rgb(29,30,44);
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .fa{
+      color:#00B4CC;
+  }
+  
+  /*Resize the wrap to see the search bar change!*/
+  .wrap{
+    /* width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    display: flex;
+    flex-direction: row;
+  }
+
+.chatpage .body .users {
+    width: 20%;
+    background-color: rgba(0, 89, 255, 0.6);
+    height: 100%;
+
+    padding: 10px;
+    color: #f2f2f2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.chatpage .body .users .user_data {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+
+    padding: 0 10px;
+
+}
+
+
+.chatpage .body .users .user_data:hover {
+    background: #ffffff;
+    color: #000;
+}
+
+.chatpage .body .user .active {
+    background: #fff;
+}
+
+.chatpage .body .chats {
+    width: 80%;
+    height: 100%;
+
+    padding: 10px;
+    background-color: #f2f2f2;
+    text-align: center;
+    vertical-align: middle;
+
+    @media only screen and (max-width: 750px) {
+        width: 100%;
+        height: 90%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .chatpage .body {
+        flex-direction: column;
+    }
+
+    .chatpage .body .users {
+
+        width: 100%;
+        height: 10%;
+
+        flex-direction: row;
+
+
+    }
+    
+    .chatpage .body .users {
+        width: 60vw;
+        overflow-x: scroll;
+        height: 15%;
+        border-radius: 1em;
+    }
+    .chatpage .body .users .user_data {
+width: auto;
+       font-size: 1em;
+       border-bottom: none;
+       border-right: 1px solid #fff;
+
+    }
+}

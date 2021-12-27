@@ -1,0 +1,109 @@
+.collection-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100vw;
+  overflow-y: scroll;
+
+
+}
+.collection-page-body{
+  width: 1360px; 
+  height:100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 65%;
+  /* background-color: #2f1d58; */
+  /* margin-top: 30%; */
+  /* height: auto; */
+  /* overflow: auto; */
+  flex-direction: row;
+}
+
+.collection-page .collection-page-body .title {
+  /* font-size: 38px;
+  font-weight: bold;
+  color: #f2f2f2;
+  color: cadetblue;
+  margin: 0 auto 30px; */
+  background: white;
+  border-left: 10px solid rgb(0,75,103);
+  border-right: 10px solid rgb(0,75,103);
+
+  color: rgb(0,75,103);
+  text-transform: capitalize;
+  padding: 20px 40px;
+  border-radius: 25px;
+  /* border: 2px solid #fff; */
+  /* box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4); */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  cursor: pointer;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 600ms;
+
+}
+
+/* .button {
+  display: inline-block;
+background: rgb(0,75,103);
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+} */
+.collection-page .collection-page-body .title:hover {
+  box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(1.2);
+          transform:  scale(1.2);
+}
+
+.collection-page .collection-page-body .items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  height: 90%;
+  width: 100%;
+  
+}
+
+.collection-page .collection-page-body .items .collection-item {
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1360px) {
+  .collection-page-body{
+    width: 800px; 
+    height:100%;
+  }
+  .collection-page .collection-page-body .items {
+
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8px;
+  }
+}
+@media only screen and (max-width: 768px) {
+ 
+  .collection-page .title {
+    font-size: 25px;
+    font-weight: bold;
+    color: #f2f2f2;
+    margin: 0 auto 30px;
+  }
+  .collection-page .items {
+
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+
+
+  }
+}

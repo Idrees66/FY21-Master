@@ -1,0 +1,56 @@
+.message {
+    width: 90%;
+
+    padding: 5px;
+
+}
+
+.message p {
+    border-radius: 1em;
+
+    font-size: 25px;
+    padding: 0 10px;
+
+}
+
+@media only screen and (max-width: 750px) {
+    .message p {
+        font-size: 15px;
+        padding: 0 5px;
+    }
+
+    .message .date {
+        font-size: 5px;
+
+
+    }
+}
+
+.message .date {
+    font-size: 10px;
+
+
+}
+
+.sent {
+    text-align: right;
+
+}
+
+.sent p {
+    background: rgba(255, 0, 0, 0.664);
+    color: #ffffff;
+
+}
+
+.received {
+    text-align: left;
+
+
+}
+
+.received p {
+    background-color: rgba(0, 0, 255, 0.623);
+    color: #fff;
+
+}
